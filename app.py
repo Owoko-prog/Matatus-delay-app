@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-API_URL = "http://localhost:8000"
+API_URL = "https://matatus-delay-app.onrender.com"
 
 ROUTES = [
     "Route 33 (CBD-Umoja)",
