@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-API_URL = "https://matatus-delay-app.onrender.com/predict"
+API_URL = "https://matatus-delay-app.onrender.com"
 
 ROUTES = [
     "Route 33 (CBD-Umoja)",
@@ -103,7 +103,7 @@ if st.button("Predict delay", type="primary", use_container_width=True):
             response = requests.post(
                 f"{API_URL}/predict?explain=true",
                 json=payload,
-                timeout=10,
+                timeout=60,
             )
             response.raise_for_status()
             data = response.json()
