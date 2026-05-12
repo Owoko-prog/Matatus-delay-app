@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 
 # ── Config ─────────────────────────────────────────────────────────────────────
-API_URL = "http://127.0.0.1:10000/predict"
+API_URL = "https://matatus-delay-app.onrender.com/predict"
 
 ROUTES = [
     "Route 33 (CBD-Umoja)",
